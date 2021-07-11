@@ -24,6 +24,7 @@ namespace Stack_and_Queue
         public void Push(T value)
         {
             StackNode<T> stackNode = new StackNode<T>(value);
+            // to check the top element
             if (top == null)
             {
                 top = stackNode;
@@ -55,6 +56,7 @@ namespace Stack_and_Queue
             }
             Console.WriteLine("the top element is {0}", top.value);
         }
+        //display method
         public void display()
         {
             if (top == null)
