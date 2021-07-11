@@ -12,7 +12,15 @@ namespace Stack_and_Queue
             stack.Push(30);
             stack.Push(53);
             Console.WriteLine("Stack is created and elements are pushed");
-           
+            stack.Peek();
+            stack.Pop();
+            stack.Peek();
+            stack.Pop();
+            stack.Peek();
+            stack.Pop();
+            stack.Peek();
+            stack.Pop();
+
         }
     }
 }

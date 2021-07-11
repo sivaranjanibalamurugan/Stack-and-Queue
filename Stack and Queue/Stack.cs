@@ -34,6 +34,42 @@ namespace Stack_and_Queue
                 top = stackNode;
             }
         }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("No element to pop");
+            }
+            else
+            {
+                top = top.Next;
+            }
+        }
+        //returns the top element of the stack
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("No element to peek");
+                return;
+            }
+            Console.WriteLine("the top element is {0}", top.value);
+        }
+        public void display()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("No element in stack");
+            }
+            else
+            {
+                StackNode<T> temp = top;
+                while (temp != null)
+                {
+                    Console.WriteLine("{0}", temp.value);
+                }
+            }
+        }
 
     }
 }
